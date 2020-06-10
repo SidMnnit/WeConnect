@@ -1,0 +1,130 @@
+@font-face{
+	font-family:'Comic-Sans';
+	src: url('../fonts/Comic-Sans.ttf');
+}
+body{
+	background-color: #EDEDED;
+}
+.top_bar{
+	width:100%;
+	height:55px;
+	min-width:1050px;
+	background-color: #ef7f7f;
+	border-top: 0.25em solid #e16a6a;
+	border-bottom: 0.25em solid #e16a6a;
+	margin : 0 0 10px;
+	display: inline-flex;
+	position:fixed;
+	z-index:10;    /*This keeps the top bar fixed in news feed that is it keeps news feed belowthe nav bar*/
+}
+.logo a{
+	font-family: 'Comic-Sans',sans-serif;
+	margin-left:10px;
+	position: relative;
+	color:#053240;
+	text-shadow:#053240 0.5px 0.5px 0.5px;
+	text-decoration: none;
+	font-size: 35px;
+}
+nav{
+	float:right;
+	right:1px;
+	position :absolute;
+	margin:10px;
+}
+nav a{
+	position:relative;
+	color:fff;
+	font-size: 17px;
+	text-decoration: none;
+}
+
+nav a:hover{
+	text-decoration: none;
+	border-bottom:3px solid #053240 ;
+	color:#053240;
+}
+
+.wrapper{
+	margin:0 auto;
+	top:65px;
+	position:relative;
+	padding: 0 10px;
+	width: 75%;
+	min-width: 950px;
+}
+.column{
+	background-color: #fff;
+    padding: 10px;
+    border: 1px solid #D3D3D3;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #D3D3D3;
+}
+.user_details{
+	width:300px;
+	float:left;
+	margin-bottom: 20px;
+}
+.user_details_left_right{
+	width:125px;
+	display:inline-block;
+	position: absolute;
+}
+.user_details_left_right a:hover{
+	color:#053240;
+}
+.user_details img{
+	height:145px;
+	width:145px;
+	border-radius: 70px;
+	margin-right:5px;
+}
+.pro{
+	color:#ef7f7f;
+}
+.main_column{
+	float:right;
+	width:69%;
+	z-index:-1;
+	min-height:168px;
+}
+.post_form{
+	width:100%;
+}
+.post_form textarea{
+	width:81%;
+	height:60px;
+	border-radius: 5px;
+	margin-right: 5px;
+	border:1px solid #ef7f7f ;
+	padding:5px;
+}
+.post_form input[type="submit"] {
+	width:11%;
+	height:60px;
+	border:none;
+	border-radius: 10px;
+	background-color:#ef7f7f;
+	text-shadow:#053240 0.5px 0.5px 0.5px;
+	position:absolute;
+	font-size:100%;
+	outline:0;
+	margin:0;
+}
+.post_form input[type="submit"]:active{
+	padding:5px 4px 4px 5px;
+	color:#EDEDED;
+}
+.status_posts{
+	width: 96%;
+	font-size: 15px;
+	padding: 0px 5px;
+	min-height: 75px;
+}
+.post_profile_pic{
+	float: left;
+	margin-right: 10px;
+}
+.post_profile_pic img{
+	border-radius: 24px;
+}
